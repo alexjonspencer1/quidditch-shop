@@ -55,18 +55,22 @@ main {
 }
 
 h3 {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 4px;
-    text-align: center;
+    margin-left: 15px;
+    text-align: left;
+    text-transform: lowercase;
 }
 
 button {
-    padding: 3px 5px 3px 5px;
+    padding: 5px 15px 5px 15px;
     margin-left: 10px;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
     background: #333333;
     color: #F6F6F6;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #center-section {

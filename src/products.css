@@ -6,7 +6,7 @@
 #gear li {
     list-style: none;
     background: #aca9a938;
-    border: 1px solid #2A2829;
+    ÷
     position: relative;
     width: 300px;
     height: 200px;
@@ -14,7 +14,7 @@
     margin-bottom: 10px;
     /* border-radius: 10px; */
     text-align: center;
-    box-shadow: 3px 3px 3px grey;
+    /* box-shadow: 3px 3px 3px grey; */
     transition: 300ms ease-in-out;
 }
 
