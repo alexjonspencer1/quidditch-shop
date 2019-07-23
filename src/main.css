@@ -6,38 +6,47 @@
 
 main {
     text-align: center;
+    
 }
+
+.header-image {
+    background: url('/assets/transparent.png')
+}
+
+/* https://stackoverflow.com/questions/2570972/css-font-border */
 
 h1 {
     font-family: 'Arsenal', sans-serif;
-    color: #F6F6F6;
-    /* text-transform: lowercase; */
-    font-size: 60px;
+    color: #333333;
+    font-size: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* text-shadow: 2px 1px grey; */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-weight: bold;
-    background: #333333;
+    /* background: #333333; */
+    
 }
 
 .nav-menu {
     font-family: 'Arsenal', sans-serif;
-    margin-bottom: 20px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 15px;
-    background: #990100;
+    /* background: #990100; */
 }
 
 nav a {
-    color: #F6F6F6;
-    font-size: 18px;
+    color: #333333;
+    font-size: 25px;
 }
 
 .header-two {
     font-family: 'Arsenal', sans-serif;
-    color: #2A2829;
+    color: #E8E8E8;
     font-size: 40px;
     margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #333333;
 }
 
 main {
@@ -51,11 +60,20 @@ h3 {
     text-align: center;
 }
 
-.buy-button {
+button {
     padding: 3px 5px 3px 5px;
     margin-left: 10px;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
     background: #333333;
     color: #F6F6F6;
+}
+
+#center-section {
+    width: 930px;
+    margin: 0 auto;
+}
+
+p {
+    padding-top: 10px;
 }
