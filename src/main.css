@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    background: url("../assets/transparent.png");
+ }
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Kreon', serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px white;
+    font-weight: bold;
+}
+
+nav a {
+    font-family: 'Kreon', serif;
+    color: #493736
+}
+
+.header-two {
+    font-family: 'Kreon', serif;
+    color: #2A2829;
+    font-size: 40px;
+}
+
+main {
+    font-family: 'Kreon', serif;
+    color: #2A2829;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+
