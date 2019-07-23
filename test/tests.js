@@ -1,1 +1,1 @@
-import './render-fruit.test.js';
+// import './render-fruit.test.js';
