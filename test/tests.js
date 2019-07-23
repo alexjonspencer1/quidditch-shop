@@ -1,1 +1,2 @@
-// import './render-fruit.test.js';
+
+import './render-gear.tests.js';
