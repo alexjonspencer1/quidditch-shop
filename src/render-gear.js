@@ -17,7 +17,6 @@ function renderGear(gear) {
     p.className = 'price';
 
     const usd = gear.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-    // p.textContent = usd;
     const priceTextNode = document.createTextNode(usd);
     p.appendChild(priceTextNode);
 
