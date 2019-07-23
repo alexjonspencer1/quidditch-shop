@@ -51,4 +51,11 @@ h3 {
     text-align: center;
 }
 
-
+.buy-button {
+    padding: 3px 5px 3px 5px;
+    margin-left: 10px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bold;
+    background: #333333;
+    color: #F6F6F6;
+}

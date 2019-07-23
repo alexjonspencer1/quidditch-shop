@@ -19,14 +19,13 @@ const nimbus2001 = {
 };
 
 const firebolt = {
-    code: 'firebold',
+    code: 'firebolt',
     name: 'Firebolt',
     image: 'assets/firebolt.png',
     description: 'The true purebred of quidditch broomsticks, reserved for the best flyers',
     category: 'broomstick',
     price: 10000,
     cost: 2500
-
 };
 
 const goldenSnitch = {
@@ -38,6 +37,7 @@ const goldenSnitch = {
     price: 2000,
     cost: 700
 };
+
 const quidditchStarterSet = {
     code: 'quidditch-starter-set',
     name: 'Quidditch Starter Set',
