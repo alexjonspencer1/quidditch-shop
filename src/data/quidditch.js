@@ -34,7 +34,7 @@ const firebolt = {
     image: 'assets/firebolt.png',
     description: 'The true purebred of quidditch broomsticks, reserved for the best flyers',
     category: 'broomstick',
-    price: 10000.00,
+    price: 9000.00,
     cost: 2500.00
 };
 

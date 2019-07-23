@@ -62,15 +62,18 @@ main {
 
 h3 {
     margin-top: 10px;
-    margin-bottom: 4px;
-    margin-left: 25px;
+    padding-left: 20px;
+    margin-bottom: 10px;
     text-align: left;
+    background: #A40000;
+    color: #E8E8E8;
+    border-right: 20px solid #E8E8E8;
     /* text-transform: lowercase; */
 }
 
 button {
     padding: 5px 15px 5px 15px;
-    margin-left: 10px;
+    margin-left: 100px;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
     background: #333333;
@@ -84,8 +87,12 @@ button {
     margin: 0 auto;
 }
 
-p {
-    padding-top: 10px;
+p.price {
+    background: white;
+    margin-top: 10px;
+    margin-right: 41px;
+    margin-left: 20px;
+    padding-left: 10px;
 }
 
 .title-image {
