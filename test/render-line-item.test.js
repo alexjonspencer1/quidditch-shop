@@ -1,4 +1,4 @@
-import gear from '../src/data/quidditch.js';
+import quidditchProducts from '../src/data/quidditch.js';
 import { findProduct } from '../src/register.js';
 import renderLineItem from '../src/render-line-item.js';
 
@@ -14,8 +14,8 @@ test('renders a line item', assert => {
         quantity: 1
     };
 
-    const nimbus2000 = findProduct(gear, lineItem.code);
-    const expected = '<tr><th class="text-align-left">Qty</th><th class="text-align-left">Item</th><th class="text-align-right">Price</th><th class="text-align-right">Total</th></tr>';
+    const nimbus2000 = findProduct(quidditchProducts, lineItem.code);
+    const expected = '<tr><th class="text-align-left">2</th><th class="text-align-left">Nimbus 2000</th><th class="text-align-right">$5,000</th><th class="text-align-right">$10,000</th></tr>';
 
     // act
     

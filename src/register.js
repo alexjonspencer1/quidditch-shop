@@ -1,4 +1,4 @@
-export function findProduct(gear, code) {
+export function findProduct(quidditchProducts, code) {
 
 }
 
