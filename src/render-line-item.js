@@ -27,7 +27,5 @@ function renderLineItem(lineItem, gear){
     tr.appendChild(totalCell);
 
     return tr;
-
 }
-
 export default renderLineItem;

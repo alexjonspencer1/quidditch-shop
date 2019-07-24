@@ -28,7 +28,5 @@ function renderGear(gear) {
     li.appendChild(p);
 
     return li;
-
 }
-
 export default renderGear;
