@@ -11,11 +11,11 @@ test('renders a line item', assert => {
 
     const lineItem = {
         code: 'nimbus-2000',
-        quantity: 1
+        quantity: 2
     };
 
     const nimbus2000 = findProduct(quidditchProducts, lineItem.code);
-    const expected = '<tr><th class="text-align-left">2</th><th class="text-align-left">Nimbus 2000</th><th class="text-align-right">$5,000</th><th class="text-align-right">$10,000</th></tr>';
+    const expected = '<tr><td class="text-align-left">2</td><td class="text-align-left">Nimbus 2000</td><td class="text-align-right">$5,000.00</td><td class="text-align-right">$10,000.00</td></tr>';
 
     // act
     

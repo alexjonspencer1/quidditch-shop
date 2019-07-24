@@ -1,13 +1,3 @@
-const comet260 = {
-    code: 'comet-260',
-    name: 'Comet 260',
-    image: 'assets/comet-260.png',
-    description: 'A beginner broom, ready for any witch or wizard!',
-    category: 'broomstick',
-    price: 2000.00,
-    cost: 200.00
-};
-
 const nimbus2000 = {
     code: 'nimbus-2000',
     name: 'Nimbus 2000',
@@ -16,6 +6,16 @@ const nimbus2000 = {
     category: 'broomstick',
     price: 5000.00,
     cost: 500.00
+};
+
+const comet260 = {
+    code: 'comet-260',
+    name: 'Comet 260',
+    image: 'assets/comet-260.png',
+    description: 'A beginner broom, ready for any witch or wizard!',
+    category: 'broomstick',
+    price: 2000.00,
+    cost: 200.00
 };
 
 const nimbus2001 = {
@@ -59,8 +59,8 @@ const quidditchStarterSet = {
 };
 
 const quidditchProducts = [
-    comet260,
     nimbus2000,
+    comet260,
     nimbus2001,
     firebolt,
     goldenSnitch,
