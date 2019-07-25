@@ -36,3 +36,12 @@ test('Bootstrap products if no products present', (assert) => {
     // assert
     assert.deepEqual(products, quidditchProducts);
 });
+
+test('Get shopping cart is empty array', (assert) => {
+
+    // act
+    const shoppingCart = store.getShoppingCart();
+
+    // assert
+    assert.deepEqual(shoppingCart, []);
+});
