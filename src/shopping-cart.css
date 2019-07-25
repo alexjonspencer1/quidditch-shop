@@ -1,0 +1,60 @@
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+thead {
+    background: #A40000;
+    color: white;
+}
+
+table th, table td {
+    padding: 8px;
+}
+
+.table-item-head {
+    width: 250px;
+}
+
+.table-paragraph {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button.cart-button {
+    margin-left: 0px;
+    padding: 10px 25px 10px 25px;
+    background: white;
+    color:#2A2829;
+}
+
+button.cart-button:hover {
+    /* box-shadow: 2px 2px 5px #2A2829; */
+    cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {
+    background: #E8E8E8;
+    color: #2A2829;
+}
+
+tfoot {
+    background:#2A2829;
+    color: #E8E8E8;
+}
+
+.table-price-head {
+    width: 150px;
+}
+
+.table-total-head {
+    width: 150px;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
