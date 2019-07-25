@@ -18,8 +18,10 @@ export function getOrderTotal(cart, quidditchProducts) {
     let orderTotal = 0;
 
     for(let i = 0; i < cart.length; i++) {
+        console.log(cart);
         let cartLoop = cart[i].code;
         let itemData = findProduct(quidditchProducts, cartLoop); 
+        console.log(itemData);
         orderTotal = orderTotal + getLineTotal(itemData.price, cart[i].quantity);
     }
     return orderTotal;

@@ -65,6 +65,7 @@ const store = {
 
         store.save(SHOPPING_CART_KEY, shoppingCart);
     }
+
 };
 
 export default store;

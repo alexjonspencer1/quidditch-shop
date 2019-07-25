@@ -6,7 +6,8 @@ import { toUSD } from '../src/format.js';
 import store from './data/store.js';
 
 const tbody = document.getElementById('table-body');
-const shoppingCartAdd = store.getShoppingCart();
+const shoppingCart = store.getShoppingCart();
+console.log("scart", shoppingCart);
 
 // for(let i = 0; i < order.length; i++) {
 //     const lineItem = order[i];
@@ -15,16 +16,18 @@ const shoppingCartAdd = store.getShoppingCart();
 //     tbody.appendChild(dom);
 // }
 
-for(let i = 0; i < shoppingCartAdd.length; i++) {
-    const shoppingCartItems = shoppingCartAdd[i];
-    const cartItems = store.getProduct(shoppingCartItems.code);
-    const dom = renderLineItem(cartItems);
+for(let i = 0; i < shoppingCart.length; i++) {
+    const lineItem = shoppingCart[i];
+    const cartItem = store.getProduct(lineItem.code);
+    // console.log("cart items", cartItem);
+    const dom = renderLineItem(lineItem, cartItem);
     tbody.appendChild(dom);
 }
 
 const totalCell = document.getElementById('total-cell');
 
-const orderTotal = toUSD(getOrderTotal(order, quidditchProducts));
+const orderTotal = toUSD(getOrderTotal(shoppingCart, quidditchProducts)); //made some changes here
+
 totalCell.textContent = orderTotal;
 
 

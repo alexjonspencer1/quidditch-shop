@@ -1,3 +1,5 @@
+import store from './data/store.js';
+
 function renderGear(gear) {
 
     const li = document.createElement('li');
@@ -23,6 +25,10 @@ function renderGear(gear) {
     const button = document.createElement('button');
     button.textContent = 'Buy!';
     button.value = gear.code;
+    button.addEventListener('click', () => {
+        console.log(gear);
+        store.orderProduct(gear.code);
+    });
     p.appendChild(button);
 
     li.appendChild(p);
