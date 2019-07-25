@@ -1,3 +1,6 @@
+import quidditchProducts from './quidditch.js';
+
+const PRODUCT_IDENTIFIER = 'products';
 
 const store = {
     storage: window.localStorage,
@@ -11,7 +14,15 @@ const store = {
         const wizard = JSON.parse(json);
         // console.log(wizard);
         return wizard;
-    }
+    },
+    getProducts() {
+        let products = store.get(PRODUCT_IDENTIFIER);
+        if(!products) {
+            store.save(PRODUCT_IDENTIFIER, quidditchProducts); 
+            products = quidditchProducts;
+        }
+        return products;
+    },
 
 };
 
