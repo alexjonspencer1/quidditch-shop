@@ -1,8 +1,8 @@
-export function findProduct(quidditchProducts, code) {
-    for(let i = 0; i < quidditchProducts.length; i++) {
-        const gear = quidditchProducts[i];
-        if(gear.code === code) {
-            return gear;
+export function findProduct(items, code) {
+    for(let i = 0; i < items.length; i++) {
+        const item = items[i];
+        if(item.code === code) {
+            return item;
         }
     }
     return null;

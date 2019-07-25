@@ -63,3 +63,36 @@ test('Add product code to empty shopping cart', (assert) => {
     // assert
     assert.deepEqual(shoppingCart, expected);
 });
+
+test('Add another item if cart is not empty', (assert) => {
+
+    //arrange 
+    const code = 'nimbus-2000';
+    const expected = [{
+        code: 'nimbus-2000',
+        quantity: 2,
+    }];
+
+    // act
+    store.orderProduct(code);
+    store.orderProduct(code);
+    const shoppingCart = store.getShoppingCart();
+
+
+    // assert
+    assert.deepEqual(shoppingCart, expected);
+});
+
+test('get product', (assert) => {
+
+    //arrange 
+    const code = 'nimbus-2000';
+    const expected = quidditchProducts[0];
+
+    // act
+
+    const item = store.getProduct(code);
+
+    // assert
+    assert.deepEqual(item, expected);
+});

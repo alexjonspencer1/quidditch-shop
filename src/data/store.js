@@ -25,6 +25,13 @@ const store = {
         }
         return products;
     },
+    getProduct(code) {
+        const storeItems = store.getProducts();
+
+        const product = findProduct(storeItems, code);
+
+        return product;
+    },
     getShoppingCart() {
         let shoppingCart = store.get(SHOPPING_CART_KEY);
         if(!shoppingCart) {
@@ -39,22 +46,25 @@ const store = {
 
         const shoppingCart = store.getShoppingCart();
 
-        // get code for product 
-
-        const productFromCode = findProduct(quidditchProducts, code);
-        console.log(productFromCode);
-
-        // push code into shopping cart array 
-        const lineItem = {
-            code: 'nimbus-2000',
-            quantity: 1
-        };
-
-        shoppingCart.push(lineItem);
+        // see if there is anything in the shopping cart
+ 
+        const lineItem = findProduct(shoppingCart, code);
+        // console.log(lineItem);
         
-        // save shopping cart back to storage
-    }
+        if(lineItem) {
+            lineItem.quantity++;
+        } 
+        else {
+            const lineItem = {
+                code: code,
+                quantity: 1
+            };
+            
+            shoppingCart.push(lineItem);
+        }
 
+        store.save(SHOPPING_CART_KEY, shoppingCart);
+    }
 };
 
 export default store;
