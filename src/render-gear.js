@@ -26,7 +26,6 @@ function renderGear(gear) {
     button.textContent = 'Buy!';
     button.value = gear.code;
     button.addEventListener('click', () => {
-        console.log(gear);
         store.orderProduct(gear.code);
     });
     p.appendChild(button);

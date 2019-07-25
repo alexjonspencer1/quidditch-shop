@@ -2,7 +2,7 @@ import { getLineTotal } from './register.js';
 import { toUSD } from '../src/format.js';
 
 function renderLineItem(lineItem, gear){
-    // console.log("gear", gear);
+    
     const tr = document.createElement('tr');
 
     const classCell = document.createElement('td');
