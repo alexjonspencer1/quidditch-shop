@@ -1,7 +1,7 @@
 import quidditchProducts from './quidditch.js';
 
-const PRODUCT_ID = 'products';
-const SHOPPING_CART_ID = 'shopping-cart';
+const PRODUCT_KEY = 'products';
+const SHOPPING_CART_KEY = 'shopping-cart';
 
 const store = {
     storage: window.localStorage,
@@ -17,17 +17,17 @@ const store = {
         return wizard;
     },
     getProducts() {
-        let products = store.get(PRODUCT_ID);
+        let products = store.get(PRODUCT_KEY);
         if(!products) {
-            store.save(PRODUCT_ID, quidditchProducts); 
+            store.save(PRODUCT_KEY, quidditchProducts); 
             products = quidditchProducts;
         }
         return products;
     },
     getShoppingCart() {
-        let shoppingCart = store.get(SHOPPING_CART_ID);
+        let shoppingCart = store.get(SHOPPING_CART_KEY);
         if(!shoppingCart) {
-            store.save(SHOPPING_CART_ID, []);
+            store.save(SHOPPING_CART_KEY, []);
             shoppingCart = [];
         }
         return shoppingCart;
