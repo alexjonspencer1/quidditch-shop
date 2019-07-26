@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="src/products.css">
     <link rel="stylesheet" href="src/shopping-cart.css">
     <link rel="stylesheet" href="src/product.entry.css">
-    <title>Document</title>
+    <title>Create New Product</title>
 </head>
 <body>
         <main>
@@ -49,11 +49,11 @@
                     </p>
                     <p>
                         <label for="image">Choose your image file:</label>
-                        <input id="image" type="file" name="image" required></input>
+                        <input id="image" type="file" name="image" x-required></input>
                     </p>
                     <p>
                         <label for="description">Please type a description of the product:</label>
-                        <textarea id="description" type="text" name="description" required></textarea>
+                        <textarea id="description" name="description" required></textarea>
                     </p>
                     <p>
                         <label for="category">Choose product category:</label>
@@ -72,10 +72,12 @@
                         <input id="cost" type="number" required name="cost">
                     </p>
                     <p>
-                        <button class="add-product-button">Add Product</button>
+                        <button>Add Product</button>
                     </p>
                                         
                 </form>
-    
+        </main>
+
+    <script type="module" src="src/product-entry.js"></script>
 </body>
 </html>

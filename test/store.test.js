@@ -78,7 +78,7 @@ test('get product', (assert) => {
 
 test('add product to product list', (assert) => {
 
-    const newItem = {
+    const product = {
         code: 'bludger',
         name: 'Bludger',
         image: 'assets/nimbus-2000.png',
@@ -88,9 +88,8 @@ test('add product to product list', (assert) => {
         cost: 100.00
     };
 
-    store.addProduct(newItem);
-    const products = store.getProduct();
-    console.log("products", products);
+    store.addProduct(product);
+    const products = store.getProducts();
 
-    assert.deepEqual(products[products.length - 1], newItem);
+    assert.deepEqual(products[products.length - 1], product);
 });

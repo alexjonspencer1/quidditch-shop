@@ -30,6 +30,12 @@ const store = {
         const product = findProduct(storeItems, code);
         return product;
     },
+    addProduct(newItem) {
+        const products = store.getProducts();
+        products.push(newItem);
+        store.save(PRODUCT_KEY, products);
+        // console.log('product from store.js', products);
+    },
     getShoppingCart() {
         let shoppingCart = store.get(SHOPPING_CART_KEY);
         
@@ -57,13 +63,8 @@ const store = {
         }
 
         store.save(SHOPPING_CART_KEY, shoppingCart);
-    },
-    addProduct(newItem) {
-        const products = store.getProducts();
-        console.log(products);
-        products.push(newItem);
-        store.save(SHOPPING_CART_KEY, products);
     }
+    
 
 };
 
