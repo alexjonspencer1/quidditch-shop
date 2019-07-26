@@ -52,10 +52,6 @@
                         <input id="image" type="file" name="image" x-required></input>
                     </p>
                     <p>
-                        <label for="description">Please type a description of the product:</label>
-                        <textarea id="description" name="description" required></textarea>
-                    </p>
-                    <p>
                         <label for="category">Choose product category:</label>
                         <select id="category" name="category" required>
                             <option value="default-choice" selected disabled hidden>Please choose a category</option>
@@ -70,6 +66,10 @@
                     <p>
                         <label for="cost">Cost:</label>
                         <input id="cost" type="number" required name="cost">
+                    </p>
+                    <p>
+                        <label for="description">Type a description:</label>
+                        <textarea id="description" name="description" required></textarea>
                     </p>
                     <p>
                         <button>Add Product</button>
