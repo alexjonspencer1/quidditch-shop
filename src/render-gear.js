@@ -27,6 +27,7 @@ function renderGear(gear) {
     button.value = gear.code;
     button.addEventListener('click', () => {
         store.orderProduct(gear.code);
+        alert ('Item has been added to your cart!');
     });
     p.appendChild(button);
 

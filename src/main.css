@@ -17,7 +17,9 @@ main {
 /* from SO */
 /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
 .intro-image {
-    opacity: 0.65;
+    opacity: 0.75;
+    height: 25%;
+    width: 25%;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
             transition:         transform .8s ease-in-out;
@@ -28,6 +30,8 @@ main {
 .intro-image:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    opacity: 0.5;
+    cursor: crosshair;
 }
 
 .header-image {
@@ -95,10 +99,11 @@ button {
     color: #F6F6F6;
     font-size: 16px;
     cursor: pointer;
+    opacity: 0.7
 }
 
 button:hover{
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #center-section {
@@ -109,9 +114,10 @@ button:hover{
 p.price {
     background: white;
     margin-top: 10px;
-    margin-right: 41px;
+    /* margin-right: 41px; */
     margin-left: 20px;
     padding-left: 10px;
+    border: 1px solid #333333;
 }
 
 .title-image {
