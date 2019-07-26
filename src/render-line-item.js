@@ -5,15 +5,15 @@ function renderLineItem(lineItem, gear){
     
     const tr = document.createElement('tr');
 
-    const classCell = document.createElement('td');
-    classCell.className = 'text-align-left';
-    classCell.textContent = lineItem.quantity;
-    tr.appendChild(classCell);
-
     const nameCell = document.createElement('td');
     nameCell.className = 'text-align-left';
     nameCell.textContent = gear.name;
     tr.appendChild(nameCell);
+
+    const classCell = document.createElement('td');
+    classCell.className = 'text-align-right';
+    classCell.textContent = lineItem.quantity;
+    tr.appendChild(classCell);
 
     const priceCell = document.createElement('td');
     priceCell.className = 'text-align-right';
