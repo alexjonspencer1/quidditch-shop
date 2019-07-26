@@ -12,7 +12,22 @@
 
 main {
     text-align: center;
-    
+}
+
+/* from SO */
+/* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+.intro-image {
+    opacity: 0.65;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+/* from SO */
+/* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+
+.intro-image:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .header-image {
