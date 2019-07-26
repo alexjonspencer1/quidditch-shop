@@ -1,0 +1,29 @@
+#product-entry-form {
+    text-align: left;
+    margin-left: 35%;
+    line-height: 2.5em;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Arsenal', sans-serif;
+}
+
+input {
+    font-size: 18px;
+    font-family: 'Arsenal', sans-serif;
+}
+
+textarea {
+    font-size: 15px;
+    font-family: 'Arsenal', sans-serif;
+    vertical-align: top;
+    width: 300px;
+    height: 75px;
+    overflow-y: scroll;
+}
+
+select {
+    font-size: 15px;
+    font-family: 'Arsenal', sans-serif;
+}

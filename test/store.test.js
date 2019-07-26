@@ -75,3 +75,22 @@ test('get product', (assert) => {
 
     assert.deepEqual(item, expected);
 });
+
+test('add product to product list', (assert) => {
+
+    const newItem = {
+        code: 'bludger',
+        name: 'Bludger',
+        image: 'assets/nimbus-2000.png',
+        description: 'A blunt force ball used in quidditch that is the key method of scoring goals',
+        category: 'quidditch-tools',
+        price: 500.00,
+        cost: 100.00
+    };
+
+    store.addProduct(newItem);
+    const products = store.getProduct();
+    console.log("products", products);
+
+    assert.deepEqual(products[products.length - 1], newItem);
+});
