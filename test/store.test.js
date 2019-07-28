@@ -59,7 +59,7 @@ test('Add product code to empty shopping cart', (assert) => {
 
 test('add product to sales list to empty shopping cart', (assert) => {
     
-    const code = "nimbus-2000"
+    const code = 'nimbus-2000';
     const expected = [{
         code: 'nimbus-2000',
         quantity: 1,
