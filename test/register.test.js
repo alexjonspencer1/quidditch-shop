@@ -1,6 +1,6 @@
 import quidditchProducts from '../src/data/quidditch.js';
 import order from '../src/data/order.js';
-import { findProduct, getLineTotal, getOrderTotal } from '../src/register.js';
+import { findProduct, getLineTotal, getOrderTotal, getProfitLineTotal } from '../src/register.js';
 
 const test = QUnit.test;
 
@@ -42,4 +42,16 @@ test('Calculate order total', (assert) => {
     const orderTotal = getOrderTotal(order, quidditchProducts);
 
     assert.equal(orderTotal, expected);
+});
+
+test('Calculate Profit line item total', (assert) => {
+    const price = 5000;
+    const cost = 500;
+    const quantity = 2;
+    const expected = 9000;
+    const variable = getLineTotal(quantity, price);
+
+    const total = getProfitLineTotal(variable, cost, quantity);
+
+    assert.equal(total, expected);
 });

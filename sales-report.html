@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="src/products.css">
     <link rel="stylesheet" href="src/shopping-cart.css">
-    <title>Shopping Cart</title>
+    <title>Sales Report</title>
 </head>
 <body>
     <main>
@@ -34,7 +34,7 @@
                 <a href="sales-report.html">Sales Report</a>
             </nav>
             
-            <h2 class="header-two">Shopping Cart</h2>
+            <h2 class="header-two">Sales Report</h2>
 
         </section>
 
@@ -43,36 +43,31 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="text-align-left">Item</th>
-                            <th class="text-align-right">Qty</th>
-                            <th class="text-align-right">Price</th>
-                            <th class="text-align-right">Total</th>
+                            <th class="text-align-left">Items Sold</th>
+                            <th class="text-align-right">Qty Sold</th>
+                            <th class="text-align-right">Item Cost</th>
+                            <th class="text-align-right">Sell Price</th>
+                            <th class="text-align-right">Sales</th>
+                            <th class="text-align-right">Profit</th>
                         </tr>
                     </thead>
 
-                    <tbody id="table-body">
-                    </tbody>
-
-                    <tfoot id="table-footer">
+                    <tbody id="table-body-sales">
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th class="text-align-right">Total</th>
-                            <th id ="total-cell" class="text-align-right"></th>
+                    
                         </tr>
-
-                    </tfoot>
+                    </tbody>
 
                 </table>
 
             </section>
 
-                <p class="table-paragraph">
-                    <button class="cart-button">Place Order</button>
-                </p>
-
         </section>
     </main>
-    <script src="src/shopping-cart.js" type="module"></script>
+    <script type="module" src="/src/data/quidditch.js"></script>
+    <script type="module" src="/src/products.js"></script>
+    <script type="module" src="/src/product-entry.js"></script>
+    <script type="module" src="/src/register.js"></script>
+    <script type="module" src="/src/sales-report.js"></script>
 </body>
 </html>

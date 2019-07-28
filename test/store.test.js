@@ -37,6 +37,12 @@ test('Get shopping cart is empty array', (assert) => {
     assert.deepEqual(shoppingCart, []);
 });
 
+test('Get sales list empty array', (assert) => {
+    const salesList = store.getSales();
+
+    assert.deepEqual(salesList, []);
+});
+//DO THIS ONE WITH THE SALES REPORT ALSO
 test('Add product code to empty shopping cart', (assert) => {
 
     const code = 'nimbus-2000';
@@ -51,6 +57,21 @@ test('Add product code to empty shopping cart', (assert) => {
     assert.deepEqual(shoppingCart, expected);
 });
 
+test('add product to sales list to empty shopping cart', (assert) => {
+    
+    const code = "nimbus-2000"
+    const expected = [{
+        code: 'nimbus-2000',
+        quantity: 1,
+    }];
+
+    store.placeOrder(code);
+    const orderList = store.getSales();
+
+    assert.deepEqual(orderList, expected);
+});
+
+//ALSO DO THIS ONE FOR THE SALES REPORT
 test('Add another item if cart is not empty', (assert) => {
 
     const code = 'nimbus-2000';
@@ -64,6 +85,21 @@ test('Add another item if cart is not empty', (assert) => {
     const shoppingCart = store.getShoppingCart();
 
     assert.deepEqual(shoppingCart, expected);
+});
+
+test('add another item to sales list if not empty', (assert) => {
+    
+    const code = 'nimbus-2000';
+    const expected = [{
+        code: 'nimbus-2000',
+        quantity: 2,
+    }];
+
+    store.placeOrder(code);
+    store.placeOrder(code);
+    const orderList = store.getSales();
+
+    assert.deepEqual(orderList, expected);
 });
 
 test('get product', (assert) => {

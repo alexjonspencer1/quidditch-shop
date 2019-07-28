@@ -19,8 +19,8 @@ main {
 /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
 .intro-image {
     opacity: 0.75;
-    height: 25%;
-    width: 25%;
+    height: 20%;
+    width: 20%;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
             transition:         transform .8s ease-in-out;

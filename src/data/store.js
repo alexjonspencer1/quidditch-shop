@@ -3,6 +3,7 @@ import { findProduct } from '../register.js';
 
 const PRODUCT_KEY = 'products';
 const SHOPPING_CART_KEY = 'shopping-cart';
+const SALES_LIST_KEY = 'sales-list';
 
 const store = {
     storage: window.localStorage,
@@ -45,6 +46,15 @@ const store = {
         }
         return shoppingCart;
     },
+    getSales() {
+        let salesList = store.get(SALES_LIST_KEY);
+
+        if(!salesList) {
+            store.save(SALES_LIST_KEY, []);
+            salesList = [];
+        }
+        return salesList;
+    },
     orderProduct(code) {
 
         const shoppingCart = store.getShoppingCart();
@@ -63,9 +73,26 @@ const store = {
         }
 
         store.save(SHOPPING_CART_KEY, shoppingCart);
+    },
+    placeOrder(code) {
+        const shoppingCart = store.getSales();
+        const lineItem = findProduct(shoppingCart, code);
+
+        if(lineItem) {
+            lineItem.quantity++;
+        } 
+        else {
+            const lineItem = {
+                code: code,
+                quantity: 1
+            };
+            
+            shoppingCart.push(lineItem);
+        }
+
+        store.save(SALES_LIST_KEY, shoppingCart);
     }
     
-
 };
 
 export default store;

@@ -26,3 +26,10 @@ export function getOrderTotal(cart, quidditchProducts) {
     
 }
 
+export function getProfitLineTotal(variable, cost, quantity) {
+    const costTotal = quantity * cost;
+    const rowProfit = variable - costTotal;
+    return rowProfit;
+
+}
+
