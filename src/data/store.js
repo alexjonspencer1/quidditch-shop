@@ -35,7 +35,6 @@ const store = {
         const products = store.getProducts();
         products.push(newItem);
         store.save(PRODUCT_KEY, products);
-        // console.log('product from store.js', products);
     },
     getShoppingCart() {
         let shoppingCart = store.get(SHOPPING_CART_KEY);

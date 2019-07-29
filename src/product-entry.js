@@ -29,7 +29,7 @@ form.addEventListener('submit', (event) => {
 
 });
 
-// found this on SO:
+// found this on SO: (From Marty)
 // https://stackoverflow.com/questions/36280818/how-to-convert-file-to-base64-in-javascript
 function getBase64(file, callback) {
     const reader = new FileReader();

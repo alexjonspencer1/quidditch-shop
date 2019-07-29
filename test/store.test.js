@@ -42,7 +42,7 @@ test('Get sales list empty array', (assert) => {
 
     assert.deepEqual(salesList, []);
 });
-//DO THIS ONE WITH THE SALES REPORT ALSO
+
 test('Add product code to empty shopping cart', (assert) => {
 
     const code = 'nimbus-2000';
@@ -71,7 +71,6 @@ test('add product to sales list to empty shopping cart', (assert) => {
     assert.deepEqual(orderList, expected);
 });
 
-//ALSO DO THIS ONE FOR THE SALES REPORT
 test('Add another item if cart is not empty', (assert) => {
 
     const code = 'nimbus-2000';

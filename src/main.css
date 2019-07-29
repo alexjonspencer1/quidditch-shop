@@ -14,7 +14,6 @@ main {
     text-align: center;
 }
 
-
 /* from SO */
 /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
 .intro-image {
@@ -41,7 +40,6 @@ main {
 }
 
 /* https://stackoverflow.com/questions/2570972/css-font-border */
-
 h1 {
     font-family: 'Fredericka the Great', cursive;
     color: #333333;
@@ -115,10 +113,10 @@ button:hover{
 p.price {
     background: white;
     margin-top: 10px;
-    /* margin-right: 41px; */
     margin-left: 20px;
     padding-left: 10px;
     border: 1px solid #333333;
+    /* margin-right: 41px; */
 }
 
 .title-image {
