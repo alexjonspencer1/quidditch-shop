@@ -1,4 +1,3 @@
-// import quidditchProducts from './data/quidditch.js';
 import { getOrderTotal } from '../src/register.js';
 import renderLineItem from '../src/render-line-item.js';
 import { toUSD } from '../src/format.js';
