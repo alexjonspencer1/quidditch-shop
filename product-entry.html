@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/products.css">
+    <link rel="stylesheet" href="src/shopping-cart.css">
+    <link rel="stylesheet" href="src/product.entry.css">
+    <title>Create New Product</title>
+</head>
+<body>
+    <main>
+
+        <section class="header-image">
+        
+            <header>
+                    <h1 id="main-product-cover">
+                        The Quality Quidditch Cottage
+                    </h1>
+            </header>
+    
+            <p class=product-page-logo>
+                <img class="title-image" src="assets/nimbus-title.png">
+            </p>
+
+            <nav class="nav-menu">
+                <a href="index.html">Home |</a>
+                <a href="products.html">Products |</a>
+                <a href="shopping-cart.html">Shopping Cart |</a>
+                <a href="product-entry.html">Create New Product |</a>
+                <a href="sales-report.html">Sales Report</a>
+            </nav>
+            
+            <h2 class="header-two">Create New Product</h2>
+        
+        </section>
+
+        <form id="product-entry-form">
+            <p>
+                <label for="code">Code:</label>
+                <input id="code" type="text" name="code" required></input>
+            </p>
+            <p>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" required></input>
+            </p>
+            <p>
+                <label for="image">Choose your image file:</label>
+                <input id="image" type="file" name="image" x-required></input>
+            </p>
+            <p>
+                <label for="category">Choose product category:</label>
+                <select id="category" name="category" required>
+                    <option value="default-choice" selected disabled hidden>Please choose a category</option>
+                    <option value="broomstick">broomstick</option>
+                    <option value="quidditch-tools">quidditch gear</option>
+                </select>
+            </p>
+            <p>
+                <label for="price">Price:</label>
+                <input id="price" type="number" required name="price">
+            </p>
+            <p>
+                <label for="cost">Cost:</label>
+                <input id="cost" type="number" required name="cost">
+            </p>
+            <p>
+                <label for="description">Type a description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </p>
+            <p>
+                <button>Add Product</button>
+            </p>
+                                    
+        </form>
+
+    </main>
+
+    <script type="module" src="src/product-entry.js"></script>
+
+</body>
+</html>

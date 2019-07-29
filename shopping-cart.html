@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/products.css">
+    <link rel="stylesheet" href="src/shopping-cart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <main>
+
+        <section class="header-image">
+
+            <header>
+                    <h1 id="main-product-cover">
+                        The Quality Quidditch Cottage
+                    </h1>
+            </header>
+
+            <p class=product-page-logo>
+                <img class="title-image" src="assets/nimbus-title.png">
+            </p>
+
+            <nav class="nav-menu">
+                <a href="index.html">Home |</a>
+                <a href="products.html">Products |</a>
+                <a href="shopping-cart.html">Shopping Cart |</a>
+                <a href="product-entry.html">Create New Product |</a>
+                <a href="sales-report.html">Sales Report</a>
+            </nav>
+            
+            <h2 class="header-two">Shopping Cart</h2>
+
+        </section>
+
+            <section>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-align-left">Item</th>
+                            <th class="text-align-right">Qty</th>
+                            <th class="text-align-right">Price</th>
+                            <th class="text-align-right">Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="table-body">
+                    </tbody>
+
+                    <tfoot id="table-footer">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="text-align-right">Total</th>
+                            <th id ="total-cell" class="text-align-right"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </section>
+
+                <p class="table-paragraph">
+                    <button class="cart-button">Place Order</button>
+                </p>
+
+        </section>
+    </main>
+    <script src="src/shopping-cart.js" type="module"></script>
+</body>
+</html>

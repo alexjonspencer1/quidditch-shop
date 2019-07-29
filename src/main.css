@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page-background {
+    background: url('/assets/transparent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+}
+
+/* from SO */
+/* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+.intro-image {
+    opacity: 0.75;
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+/* from SO */
+/* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+
+.intro-image:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0.5;
+    cursor: crosshair;
+}
+
+.header-image {
+    background: url('/assets/transparent.png');
+    background-size: cover;
+}
+
+/* https://stackoverflow.com/questions/2570972/css-font-border */
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    color: #333333;
+    font-size: 65px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    /* background: #333333; */
+}
+
+.nav-menu {
+    font-family: 'Arsenal', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    /* background: #990100; */
+}
+
+nav a {
+    color: #333333;
+    font-size: 20px;
+}
+
+.header-two {
+    font-family: 'Arsenal', sans-serif;
+    color: #E8E8E8;
+    font-size: px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #333333;
+}
+
+main {
+    font-family: 'Arsenal', sans-serif;
+    color: #2A2829;
+}
+
+h3 {
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    background: #A40000;
+    color: #E8E8E8;
+    border-right: 20px solid #E8E8E8;
+    /* text-transform: lowercase; */
+}
+
+button {
+    padding: 5px 15px 5px 15px;
+    margin-left: 100px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bold;
+    background: #333333;
+    color: #F6F6F6;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.7
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#center-section {
+    width: 930px;
+    margin: 0 auto;
+}
+
+p.price {
+    background: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    border: 1px solid #333333;
+    /* margin-right: 41px; */
+}
+
+.title-image {
+    height: 20%;
+    width: 20%;
+}
+
+.product-page-logo {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    opacity: 0.9;
+    /* background: #E8E8E8; */
+}

@@ -1,0 +1,52 @@
+#gear {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gear li {
+    list-style: none;
+    background: #aca9a938;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    /* transition: 50ms ease-in-out; */
+    /* box-shadow: 3px 3px 3px grey; */
+    /* border-radius: 10px; */
+}
+
+#gear li:hover {
+    /* box-shadow: 2px 2px 5px #2A2829; */
+    /* transform: translate3d(-2px, -2px, 0); */
+    /* cursor: pointer; */
+    /* opacity: 0.8; */
+}
+
+#gear img {
+    height: 50%;
+    /* width: 50%; */
+}
+/* https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/ */
+
+#menu-outer {
+    height: 84px;
+}
+/* https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/ */
+
+.table {
+    display: table;  
+    margin: 0 auto;
+}
+
+/* https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/ */
+
+ul#gear {
+    list-style: none;
+    /* min-width: 696px; */
+	}
+	ul#gear li {
+		display: inline;
+	}
+
